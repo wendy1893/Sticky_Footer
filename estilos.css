@@ -1,0 +1,28 @@
+body{
+    height: 100vh; /* vh vw si no le ponemos el 100vh no funciona, tenemos viewport-height(alto) viewport - width(ancho) podemos ponerlo de 1 a 100 y 50 es la mitad*/
+    display: flex; /* 100% del tamaño del viewport del alto es vh, 100% del tamaño del viewport del ancho es vw */
+    flex-direction: column;
+    margin: 0;
+}
+
+header{
+    border: 1px solid red;
+    background: red;
+    padding: 10px;
+}
+
+
+
+.contenido{
+    border: 1px solid blue;
+    flex: 1; /* esto que estamos modificando aqui es el flex-grow:1; que lo toma del height: ; que tengamos en este caso es 100vh es decir el 100%; */
+    padding: 10px;
+}
+
+ 
+
+.footer{
+    border: 1px solid green;
+    background: green;
+    padding: 10px;
+}
